@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tailor-Admin</title>
+  <base href="/adminpanel/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet" type="text/css">
+  
+  <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/vendors/material-icons/material-icons.css" rel="stylesheet" type="text/css">
+  <link href="assets/vendors/mono-social-icons/monosocialiconsfont.css" rel="stylesheet" type="text/css">
+  <link href="assets/vendors/feather-icons/feather.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/pace.css">
+  <!-- <link href="assets/css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="assets/css/jqvmap.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="assets/css/magnific-popup.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="assets/vendors/linea-icons/styles.css" rel="stylesheet" type="text/css">
+  <!-- <link href="assets/css/daterangepicker.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="assets/css/fullcalendar.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="assets/css/line-icon/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/iEdit.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/style1.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/cdk-overlay.css" rel="stylesheet" type="text/css">
+  <!-- <link href="assets/css/custom.css" rel="stylesheet" type="text/css"> -->
+  <!-- Head Libs -->
+  <!-- <script src="assets/js/modernizr.min.js"></script> -->
+  <script data-pace-options='{ "ajax": false, "selectors": [ "img" ]}' src="assets/js/pace.min.js"></script>
+  <script src="assets/js/pdt360DegViewer.js"></script>
+
+</head>
+<body class="sidebar-light sidebar-expand navbar-brand-dark">
+<!-- <div class="pace pace-active">
+  <div class="pace-activity"></div>
+</div> -->
+<div id="wrapper">
+  <app-root></app-root>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+<!-- <script src="assets/js/metisMenu.min.js"></script> -->
+<script src="assets/js/iEdit.js"></script>
+<!-- <script src="assets/js/perfect-scrollbar.min.js"></script> -->
+<!-- <script src="assets/js/countUp.min.js"></script> -->
+<!-- <script src="assets/js/moment.min.js"></script> -->
+<!-- <script src="assets/js/Chart.min.js"></script> -->
+<!-- <script src="assets/js/jquery.sparkline.min.js"></script> -->
+<!-- <script src="assets/js/select2.min.js"></script> -->
+<!-- <script src="assets/js/jquery.vmap.js"></script> -->
+<!-- <script src="assets/js/jquery.vmap.usa.js"></script> -->
+<!-- <script src="assets/js/jquery.magnific-popup.min.js"></script> -->
+<!-- <script src="assets/js/jquery.dataTables.min.js"></script> -->
+<!-- <script src="assets/js/daterangepicker.min.js"></script> -->
+<!-- <script src="assets/js/bootstrap-datepicker.min.js"></script> -->
+<!-- <script src="assets/js/fullcalendar.min.js"></script> -->
+<!-- <script src="assets/js/template.js"></script> -->
+
+<script type="text/javascript">
+  $( window ).on( "load", function() {
+    $('.pace').addClass("pace-inactive").removeClass("pace-active");
+  });
+  // $(document).ready(function(){
+  //   $("#startdate").datepicker({
+  //     todayBtn:  1,
+  //     autoclose: true,
+  //   }).on('changeDate', function (selected) {
+  //     var minDate = new Date(selected.date.valueOf());
+  //     $('#enddate').datepicker('setStartDate', minDate);
+  //   });
+
+  //   $("#enddate").datepicker()
+  //   .on('changeDate', function (selected) {
+  //    var maxDate = new Date(selected.date.valueOf());
+  //    $('#startdate').datepicker('setEndDate', maxDate);
+  //  });
+  // });
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(document).on("change",".gal-file",function(e2) {
+    var img1 = e2.target.files[0];
+    if(!iEdit.open(img1, true, function(res1){
+      console.log(res1)
+      $(e2.target).closest('div').find(".gal-result").attr("src", res1);  
+    })){
+      alert("Whoops! That is not an image!");
+    }
+  });
+  $(document).on("click","#click-ap",function() {
+    $('.add-new').append('<div class="col-md-4 add-box gal-box">\
+      <img src="assets/images/science.jpg" class="gal-result">\
+      <input type="file" class="gal-file"/>\
+      <img src="assets/images/cross.png" class="cross del">\
+      </div>');
+    
+    $(".cross").on('click',function(){
+     $(this).parent('.add-box').remove();
+   });
+  });
+});
+</script>
+
+<script src="runtime.e7843279c80006471764.js" defer></script><script src="polyfills.6bf7a229a9cb9334c2b8.js" defer></script><script src="styles.9d4e27945e4706db4a6b.js" defer></script><script src="scripts.e3de35493dc9a021618e.js" defer></script><script src="main.d23040bd7cc1e39c0d6c.js" defer></script></body>
+</html>

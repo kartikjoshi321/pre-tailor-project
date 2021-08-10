@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="60.39" viewBox="0 0 46 60.39">
+  <g id="logo_small" transform="translate(0 -0.066)">
+    <rect id="Rectangle_11734" data-name="Rectangle 11734" width="46" height="60" transform="translate(0 0.419)" fill="none"/>
+    <g id="Advisor_Book" data-name="Advisor Book" transform="translate(0.369 0.066)">
+      <path id="Path_1" data-name="Path 1" d="M88.822,120.89l-2.473,7.1-1.628,4.69-2.893,8.3-8.314,23.94H59.53l15.315-44,.009-.03Z" transform="translate(-59.53 -104.526)" fill="#3953a4"/>
+      <path id="Path_2" data-name="Path 2" d="M245.087,164.886H231.1L222.789,141l-.009-.026,2.679-7.694,4.933,14.174.839-1.868,2.349,1.642-6.391-18.342a.894.894,0,0,1,0-.584l2.582-7.415.009.03Z" transform="translate(-199.594 -104.526)" fill="#3953a4"/>
+      <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="7.198" cy="7.205" rx="7.198" ry="7.205" transform="translate(15.789 0)" fill="#3953a4"/>
+    </g>
+  </g>
+</svg>

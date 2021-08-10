@@ -1,0 +1,40 @@
+{
+    "project_info": {
+      "project_number": "280249406206",
+      "firebase_url": "https://fir-demo-88881.firebaseio.com",
+      "project_id": "fir-demo-88881",
+      "storage_bucket": "fir-demo-88881.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:280249406206:android:dd3f7eb2f282f8d04c8baf",
+          "android_client_info": {
+            "package_name": "Tailor.app"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "280249406206-82r02b1g5e28mgjdtus3nni8ufskk81n.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyCv9jQ7aCWKLP6C_3nwKexUAGLL1jhIJSg"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "280249406206-82r02b1g5e28mgjdtus3nni8ufskk81n.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
